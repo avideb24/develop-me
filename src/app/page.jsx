@@ -1,3 +1,4 @@
+import About from "@/components/page-comp/home/about";
 import Skills from "@/components/page-comp/home/skills";
 import React from "react";
 
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
 
       <Skills />
+      <About />
 
     </div>
   );

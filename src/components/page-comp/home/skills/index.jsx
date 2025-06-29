@@ -55,9 +55,9 @@ const Skills = () => {
     ];
 
     return (
-        <section className="bg-dark text-light py-32">
-            <div className="container">
-                <SectionTitle title={"Why Choose me"} />
+        <section className="container">
+            <div className="bg-dark text-light py-32 px-16 rounded-3xl">
+                <SectionTitle title={"Why Choose me"} isDark={true} />
                 
                 {/* Title & Arrows */}
                 <div className="flex justify-between items-start gap-6 flex-wrap relative">
