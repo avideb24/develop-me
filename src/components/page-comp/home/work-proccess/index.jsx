@@ -32,7 +32,7 @@ const WorkProccess = () => {
 
     return (
         <section className="container">
-            <div className="bg-[#141414] text-light py-32 px-16 rounded-3xl">
+            <div className="bg-[#141414] text-light pt-32 pb-16 px-14 rounded-3xl">
                 <div className="relative">
                     <div className="absolute left-0 top-0">
                         <SectionTitle title={"Work Proccess"} isDark={true} />
