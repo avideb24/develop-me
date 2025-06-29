@@ -32,17 +32,17 @@ const WorkProccess = () => {
 
     return (
         <section className="container">
-            <div className="bg-[#141414] text-light pt-32 pb-16 px-14 rounded-3xl">
+            <div className="bg-[#141414] text-light pt-16 lg:pt-32 pb-8 lg:pb-16 px-8 lg:px-14 rounded-3xl">
                 <div className="relative">
                     <div className="absolute left-0 top-0">
                         <SectionTitle title={"Work Proccess"} isDark={true} />
                     </div>
-                    <h2 className="text-5xl font-semibold text-center">
+                    <h2 className="pt-20 xl:pt-0 text-2xl lg:text-5xl font-semibold text-left xl:text-center">
                         My Work Proccess
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 pt-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-12">
                     {
                         cards?.map(card =>
                             <div key={card?.id} className="bg-dark p-5 rounded-3xl hover:bg-primary duration-300 hover:text-dark group hover:rotate-3">

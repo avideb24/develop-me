@@ -56,23 +56,23 @@ const Skills = () => {
 
     return (
         <section className="container">
-            <div className="bg-dark text-light py-32 px-16 rounded-3xl">
+            <div className="bg-dark text-light py-10 lg:py-32 px-6 lg:px-16 rounded-3xl relative z-30">
                 <SectionTitle title={"Why Choose me"} isDark={true} />
                 
                 {/* Title & Arrows */}
-                <div className="flex justify-between items-start gap-6 flex-wrap relative">
-                    <h2 className="text-5xl font-semibold max-w-md leading-[70px]">
+                <div className="flex flex-col lg:flex-row justify-between items-start gap-6 flex-wrap relative">
+                    <h2 className="text-xl md:text-5xl font-semibold max-w-md leading-[40px] md:leading-[70px]">
                         My Extensive <br /> List of Skills
                     </h2>
 
                     <div className="flex items-center gap-6">
-                        <p className="h-fit max-w-md text-right leading-8 border-b border-b-light pb-5 border-opacity-40">
+                        <p className="h-fit max-w-md text-left lg:text-right leading-8 border-b border-b-light pb-5 border-opacity-40">
                             Building the worlds best marketing Your trusted partner for strategy, design, and dev.
                         </p>
                     </div>
 
                     {/* Custom Navigation Buttons */}
-                        <div className="absolute -bottom-6 right-0 flex gap-2 pt-1">
+                        <div className="absolute -bottom-16 lg:-bottom-6 right-0 flex gap-2 pt-1">
                             <button
                                 ref={prevRef}
                                 className="w-10 h-10 border border-light rounded-full flex items-center justify-center"
@@ -89,7 +89,7 @@ const Skills = () => {
                 </div>
 
                 {/* Swiper Slider */}
-                <div className="mt-16 relative -mx-4 px-4 overflow-hidden">
+                <div className="mt-24 lg:mt-16 relative -mx-4 px-4 overflow-hidden">
                     <Swiper
                         spaceBetween={40}
                         slidesPerView={1.2}

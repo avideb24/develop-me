@@ -30,25 +30,27 @@ const Contact = () => {
 
 
             <div className="container">
-                <div className="flex items-center gap-16">
+                <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
 
                     {/* left content */}
                     <div className="flex-1">
                         <SectionTitle title={"Contact"} isDark={false} />
-                        <h2 className="max-w-[800px] text-7xl leading-[100px] font-bold">Interested in <span className="highlight-text !inline-block">work</span> together?</h2>
-                        <p className="pt-8 pb-10">We start every new client interaction with an in-depth discovery call where
+                        <h2 className="max-w-[800px] text-2xl lg:text-7xl leading-[40px] lg:leading-[100px] font-bold text-center lg:text-left">Interested in <span className="highlight-text !inline-block">work</span> together?</h2>
+                        <p className="pt-3 lg:pt-8 pb-6 lg:pb-10 text-center lg:text-left">We start every new client interaction with an in-depth discovery call where
                             we get to know each other</p>
-                        <Button text={"Schedule a Call"} icon={callIcon} />
+                        <div className="flex justify-center lg:justify-start">
+                            <Button text={"Schedule a Call"} icon={callIcon} />
+                        </div>
                     </div>
 
                     {/* form */}
-                    <form className="w-[500px] bg-dark p-8 rounded-3xl text-light space-y-5">
+                    <form className="w-full md:w-[500px] bg-dark p-8 rounded-3xl text-light space-y-5">
                         <input type="text" className="w-full bg-transparent py-2 outline-none border-b border-b-light/20 focus:border-b-primary duration-200" placeholder="Enter your name" required />
                         <input type="email" className="w-full bg-transparent py-2 outline-none border-b border-b-light/20 focus:border-b-primary duration-200" placeholder="Your email address" required />
                         <input type="text" className="w-full bg-transparent py-2 outline-none border-b border-b-light/20 focus:border-b-primary duration-200" placeholder="Describe your project" required />
                         <div className="flex items-center gap-3 py-2">
                             <Button text={"Send"} icon={sendIcon} isDark={true} />
-                            <span>or</span>
+                            <span className="hidden md:block">or</span>
                             <Button text={"Contact me"} icon={mailIcon} isDark={true} />
                         </div>
                         <div className="flex items-center gap-3">
