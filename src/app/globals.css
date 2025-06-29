@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Bengali:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Sporting Grotesque';
+  src: url('../assets/fonts/SportingGrotesque-Regular.otf') format('truetype'),
+       url('../assets/fonts/SportingGrotesque-Bold.otf') format('truetype');
+  font-weight: 200 400 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  @apply bg-white dark:bg-dark text-white dark:text-dark font-primary;
+}
+
+
+/* Remove arrows in Chrome, Safari, Edge */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows in Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+
+/* button css */
+.button{
+  @apply bg-primary w-fit px-10 capitalize py-2 text-xs sm:text-sm text-white hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark duration-300;
+}
+.icon-button {
+  @apply relative flex items-center justify-center w-10 h-10 rounded-full border-2 border-light hover:bg-dark text-white duration-300;
+}
+
+
+
