@@ -9,8 +9,8 @@
   font-family: 'Sporting Grotesque';
   src: url('../assets/fonts/SportingGrotesque-Regular.otf') format('truetype'),
        url('../assets/fonts/SportingGrotesque-Bold.otf') format('truetype');
-  font-weight: 200 400 600 700;
-  font-style: normal;
+  font-weight: 200 400 600 700 800;
+  font-style: 400;
   font-display: swap;
 }
 
@@ -41,5 +41,7 @@ input[type='number'] {
   @apply relative flex items-center justify-center w-10 h-10 rounded-full border-2 border-light hover:bg-dark text-white duration-300;
 }
 
-
+.highlight-text{
+  @apply bg-dark text-light px-3 rounded-lg;
+}
 
