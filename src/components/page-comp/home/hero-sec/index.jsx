@@ -18,7 +18,17 @@ const HeroSection = () => {
     ];
 
     return (
-        <section className="">
+        <section className="relative">
+
+            {/* overlays */}
+            <div className="absolute -z-10 bottom-20 -right-0 w-[700px] h-[250px] bg-primary opacity-100 rounded-full rotate-45 blur-[80px]"></div>
+
+            <div className="absolute -z-20 -top-44 left-72 w-[600px] h-[1000px] bg-secondary opacity-90 rotate-[105deg] blur-[120px]"
+                style={{ clipPath: 'polygon(50% 0%, 22% 100%, 72% 100%)' }}
+                >
+            </div>
+
+
             <div className="container">
                 <Navbar />
                 <div className="pt-20 pb-32">

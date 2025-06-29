@@ -20,7 +20,15 @@ const Contact = () => {
     ];
 
     return (
-        <section className="pt-16 pb-32">
+        <section className="pt-16 pb-32 relative overflow-hidden">
+
+            {/* overlays */}
+            <div className="absolute -z-10 -bottom-20 -right-0 w-[1000px] h-[300px] bg-primary opacity-90 rounded-full -rotate-12 blur-[140px]"></div>
+
+            <div className="absolute -z-20 -bottom-44 -right-10 w-[1400px] h-[500px] bg-secondary opacity-90 rounded-full -rotate-12 blur-[140px]"></div>
+
+
+
             <div className="container">
                 <div className="flex items-center gap-16">
 
