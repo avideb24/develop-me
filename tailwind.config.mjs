@@ -15,8 +15,8 @@ export default {
       colors: {
         primary: "#CCFF02",
         secondary: "#59FFCD00",
-        light: "#fff",
-        dark: "#1a1a1a",
+        light: "#FFFFFF",
+        dark: "#000000",
       },
       container: {
         center: true,
