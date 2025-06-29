@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/footer";
 import "./globals.css";
 import HeroSection from "@/components/page-comp/home/hero-sec";
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <div>
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
