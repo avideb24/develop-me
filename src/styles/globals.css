@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Bengali:wght@100..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,15 +31,10 @@ input[type='number'] {
 }
 
 
-/* button css */
-.button{
-  @apply bg-primary w-fit px-10 capitalize py-2 text-xs sm:text-sm text-white hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark duration-300;
-}
-.icon-button {
-  @apply relative flex items-center justify-center w-10 h-10 rounded-full border-2 border-light hover:bg-dark text-white duration-300;
-}
-
 .highlight-text{
   @apply bg-dark text-light px-3 rounded-lg;
 }
 
+.cover-clip {
+  clip-path: polygon(50% 0%, 22% 100%, 72% 100%);
+}

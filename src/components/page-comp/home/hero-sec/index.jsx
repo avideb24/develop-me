@@ -23,10 +23,11 @@ const HeroSection = () => {
             {/* overlays */}
             <div className="absolute -z-10 bottom-20 -right-0 w-[700px] h-[250px] bg-primary opacity-100 rounded-full rotate-45 blur-[80px]"></div>
 
-            <div className="absolute -z-20 -top-44 left-72 w-[600px] h-[1000px] bg-secondary opacity-90 rotate-[105deg] blur-[120px]"
-                style={{ clipPath: 'polygon(50% 0%, 22% 100%, 72% 100%)' }}
-                >
+            <div className="absolute -z-20 -top-72 left-72 w-[600px] h-[1000px] bg-white opacity-100 rotate-[90deg] rounded-full blur-[80px]">
+                <div className="absolute -z-20 top-16 -right-20 w-[600px] h-[1000px] rotate-[15deg] rounded-full cover-clip bg-secondary"></div>
             </div>
+            <div className="absolute z-50 -left-48 top-48 w-[550px] h-[70px] bg-primary opacity-100 rounded-full rotate-45 blur-[80px]"></div>
+
 
 
             <div className="container">
@@ -36,7 +37,7 @@ const HeroSection = () => {
                     <div className="flex gap-48 pt-16">
                         <div className="-translate-x-1 -rotate-90">
                             <p>@williamrey</p>
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 pt-3">
                                 <span className="w-10 h-[1px] bg-dark inline-block"></span>
                                 {
                                     socials?.map(social =>

@@ -10,7 +10,6 @@ export default {
     extend: {
       fontFamily: {
         primary: ["Sporting Grotesque", "sans-serif"],
-        bangla: ["Noto Sans Bengali", "serif"],
       },
       colors: {
         primary: "#CCFF02",

@@ -1,9 +1,9 @@
 import Footer from "@/components/layout/footer";
-import "./globals.css";
+import "../styles/globals.css";
 import HeroSection from "@/components/page-comp/home/hero-sec";
 
 export const metadata = {
-  title: "DevelopMe",
+  title: "Develop Me",
   description: "Your site description here",
 };
 
